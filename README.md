@@ -2,13 +2,13 @@
 
 Trying to learn [Rust](https://www.rust-lang.org/) from scratch? Me too! And aside from a course at the university some 15 years ago and a couple of spare time embedded projects, I'm also a newbie with C / C++.
 
-As we are dealing with a fairly low-level language, we should forget about to-do apps and choose something where performance is key. With a bit of googling it seems like a good resource for that is Peter Shirley's [*Raytracing in One Weekend*](https://raytracing.github.io/books/RayTracingInOneWeekend.html), although learning *anything* new in one weekend sounds ambitious (did I mention I don't know much about computer graphics either?).
+As we are dealing with a fairly low-level language, we should forget about to-do apps and choose something where performance is key. A good resource for that is Peter Shirley's [*Raytracing in One Weekend*](https://raytracing.github.io/books/RayTracingInOneWeekend.html), although learning *anything* new in one weekend sounds ambitious (did I mention I don't know much about computer graphics either?).
 
 We're probably already behind schedule, so let's get started!
 
 ## Installation
 
-I'm running Windows 10, so currently (July 2020) the easiest way is to install the latest ```rustup-init.exe``` from [rust-lang.org](https://www.rust-lang.org/tools/install). The docs mention [other installation methods](https://forge.rust-lang.org/infra/other-installation-methods.html) and the possibility of adding a signed .msi installer in the future, so do check if those are more suitable for your use case.
+I'm running Windows 10, so currently (July 2020) the easiest way to get started with Rust is to install the latest ```rustup-init.exe``` from [rust-lang.org](https://www.rust-lang.org/tools/install). The docs mention [other installation methods](https://forge.rust-lang.org/infra/other-installation-methods.html) and the possibility of adding a signed .msi installer in the future, so do check if those are more suitable for your use case.
 
 The recommended installer *is* kind of scary with all the Windows protection warnings, but let's proceed anyway - it's not like anything bad ever came from the internet?
 
@@ -63,12 +63,12 @@ Hello, world!
 
 As a C# developer I'm so used to IntelliSense that I can't really imagine working without code navigation and completion. Luckily there's a bunch of plugins for [VS Code](https://code.visualstudio.com/) making life a little bit easier.
 
-The extension simply named *Rust* (```rust-lang.rust```) says to provide "lints, code completion and navigation, formatting and more" and is the most common Rust plugin with over half a million downloads.
+The extension simply named *Rust* ([rust-lang.rust](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust)) says to provide "lints, code completion and navigation, formatting and more" and is the most common Rust plugin with over half a million downloads.
 
 After installing the extension and opening the ```src/main.rs``` file, a notification appears requesting some additional components to be installed by the extension. Finally, we can build our hello program using the ```SHIFT + CTRL + B``` shortcut.
 
-The *Rust* extension doesn't seem to do anything for ```Cargo.toml```. An extension called *crates* (```serayuzgur.crates```) aims to help with dependencies from crates.io, but it seems a bit glitchy as of version 0.5.1. Instead I opted for a simple syntax highlighter *Better TOML* (```bungcip.better-toml```).
+The *Rust* extension doesn't seem to do anything for ```Cargo.toml```. An extension called *crates* ([serayuzgur.crates](https://marketplace.visualstudio.com/items?itemName=serayuzgur.crates)) aims to help with dependencies from crates.io, but it seems a bit glitchy as of version 0.5.1. Instead I opted for a simple syntax highlighter *Better TOML* ([bungcip.better-toml](https://marketplace.visualstudio.com/items?itemName=bungcip.better-toml)).
 
 ## Conclusion
 
-The development environment is now installed and seems to work just fine. In the next session we're going to learn some Rust basics and hopefully draw something.
+The development environment is now installed and seems to work just fine. In the [next session](https://github.com/lopossumi/Rust-Output-Image) we're going to learn some Rust basics and draw something.
