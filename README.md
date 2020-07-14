@@ -2,7 +2,9 @@
 
 Trying to learn [Rust](https://www.rust-lang.org/) from scratch? Me too! And aside from a course at the university some 15 years ago and a couple of spare time embedded projects, I'm also a newbie with C / C++.
 
-As we are dealing with a fairly low-level language, we should forget about to-do apps and choose something where performance is key. With a bit of googling it seems like a good resource for that is Peter Shirley's [*Raytracing in One Weekend*](https://raytracing.github.io/books/RayTracingInOneWeekend.html), although learning *anything* new in one weekend sounds ambitious (did I mention I don't know much about computer graphics either?). We're probably already behind schedule, so let's get started!
+As we are dealing with a fairly low-level language, we should forget about to-do apps and choose something where performance is key. With a bit of googling it seems like a good resource for that is Peter Shirley's [*Raytracing in One Weekend*](https://raytracing.github.io/books/RayTracingInOneWeekend.html), although learning *anything* new in one weekend sounds ambitious (did I mention I don't know much about computer graphics either?).
+
+We're probably already behind schedule, so let's get started!
 
 ## Installation
 
@@ -42,7 +44,7 @@ Before diving into raytracing, let's ensure that everything is working as intend
 PS D:\RustProjects> cargo new hello
      Created binary (application) `hello` package
 ```
-Opening the ```hello``` folder in VS Code we can see that our starter project already contains a "Hello, world!" program in the ```src/main.rs``` file. In the project root folder there is also an important looking [*manifest*](https://doc.rust-lang.org/cargo/reference/manifest.html) file called ```Cargo.toml```, which contains package information and dependencies.
+Opening the ```hello``` project folder we can see that our starter project already contains a "Hello, world!" program in the ```src/main.rs``` file. In the project root there is also an important looking [*manifest*](https://doc.rust-lang.org/cargo/reference/manifest.html) file called ```Cargo.toml```, which contains package information and an empty list of dependencies.
 
 ## Compiling and running the program
 
@@ -57,9 +59,9 @@ PS D:\RustProjects\hello> cargo run
      Running `target\debug\hello.exe`
 Hello, world!
 ```
-### VS Code extensions
+## VS Code and extensions
 
-As a C# developer I'm so used to IntelliSense that I can't really imagine working without code navigation and completion. Luckily there's a bunch of plugins for VS Code making life a little bit easier.
+As a C# developer I'm so used to IntelliSense that I can't really imagine working without code navigation and completion. Luckily there's a bunch of plugins for [VS Code](https://code.visualstudio.com/) making life a little bit easier.
 
 The extension simply named *Rust* (```rust-lang.rust```) says to provide "lints, code completion and navigation, formatting and more" and is the most common Rust plugin with over half a million downloads.
 
