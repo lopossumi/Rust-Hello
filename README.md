@@ -1,5 +1,7 @@
 # Learning Rust Part 1: Hello, World!
 
+> 📚 Series: [Part 1](https://github.com/lopossumi/Rust-Hello) - [Part 2](https://github.com/lopossumi/Rust-Output-Image) - [Part 3](https://github.com/lopossumi/Rust-Vectors) - [Part 4](https://github.com/lopossumi/Rust-Rays) - [Part 5](https://github.com/lopossumi/Rust-Materials)
+
 Trying to learn [Rust](https://www.rust-lang.org/) from scratch? Me too! And aside from a course at the university some 15 years ago and a couple of spare time embedded projects, I'm also a newbie with C / C++.
 
 As we are dealing with a fairly low-level language, we should forget about to-do apps and choose something where performance is key. A good resource for that is Peter Shirley's [*Raytracing in One Weekend*](https://raytracing.github.io/books/RayTracingInOneWeekend.html), although learning *anything* new in one weekend sounds ambitious (did I mention I don't know much about computer graphics either?).
