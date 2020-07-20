@@ -36,7 +36,7 @@ I thought we were going to learn Rust instead of C++? I definitely do *not* know
 
 After installing the C++ packages, the rustup installer proceeds without warnings. Opening a new terminal window we can see that cargo (the Rust package manager) is installed and found in PATH.
 
-```powershell
+```
 PS C:\> cargo --version
 cargo 1.44.1 (88ba85757 2020-06-11)
 ```
@@ -44,7 +44,7 @@ cargo 1.44.1 (88ba85757 2020-06-11)
 ## Initializing the project
 
 Before diving into raytracing, let's ensure that everything is working as intended. New projects can be created with cargo using the command ```cargo new [project name]```, which also creates a new sub-directory for the project. 
-```powershell
+```
 PS D:\RustProjects> cargo new hello
      Created binary (application) `hello` package
 ```
@@ -53,7 +53,7 @@ Opening the ```hello``` project folder we can see that our starter project alrea
 ## Compiling and running the program
 
 With Rust, everything on the project level is done with ```cargo```. Building and running the project can be done from the command line:
-```powershell
+```
 PS D:\RustProjects\hello> cargo build
    Compiling hello v0.1.0 (D:\RustProjects\hello)
     Finished dev [unoptimized + debuginfo] target(s) in 0.61s
