@@ -2,11 +2,13 @@
 
 > 📚 Series: [Part 1](https://github.com/lopossumi/Rust-Hello) - [Part 2](https://github.com/lopossumi/Rust-Output-Image) - [Part 3](https://github.com/lopossumi/Rust-Vectors) - [Part 4](https://github.com/lopossumi/Rust-Rays) - [Part 5](https://github.com/lopossumi/Rust-Materials)
 
-Trying to learn [Rust](https://www.rust-lang.org/) from scratch? Me too! And aside from a course at the university some 15 years ago and a couple of spare time embedded projects, I'm also a newbie with C / C++.
+Trying to learn [Rust](https://www.rust-lang.org/) from scratch? Me too! This learning diary will give you some insight on how Rust 2018 looks like from a run-of-the-mill C# developer's point of view.
 
-As we are dealing with a fairly low-level language, we should forget about to-do apps and choose something where performance is key. A good resource for that is Peter Shirley's [*Raytracing in One Weekend*](https://raytracing.github.io/books/RayTracingInOneWeekend.html), although learning *anything* new in one weekend sounds ambitious (did I mention I don't know much about computer graphics either?).
+As we are dealing with a fast and fairly low-level language, we should forget about to-do apps and choose something where performance is key. A good resource for that is Peter Shirley's [*Raytracing in One Weekend*](https://raytracing.github.io/books/RayTracingInOneWeekend.html), although learning *anything* new in one weekend sounds ambitious - let alone learning two things at once.
 
 We're probably already behind schedule, so let's get started!
+
+> 🛒 Note: It's only fair to mention that while you can read Shirley's book for free, it's also available as an e-book on Amazon.
 
 ## Installation
 
@@ -30,7 +32,7 @@ tools, but otherwise, install the C++ build tools before proceeding.
 Continue? (Y/n)
 ```
 
-I thought we were going to learn Rust instead of C++? It seems I definitely do *not* know what I'm doing, so let's answer "no".
+I thought we were going to learn Rust instead of C++? I definitely do *not* know what I'm doing, so let's answer "no".
 
 After installing the C++ packages, the rustup installer proceeds without warnings. Opening a new terminal window we can see that cargo (the Rust package manager) is installed and found in PATH.
 
@@ -50,7 +52,7 @@ Opening the ```hello``` project folder we can see that our starter project alrea
 
 ## Compiling and running the program
 
-With Rust, it seems that everything can be done with ```cargo```. Building and running the project can be done from the command line:
+With Rust, everything on the project level is done with ```cargo```. Building and running the project can be done from the command line:
 ```powershell
 PS D:\RustProjects\hello> cargo build
    Compiling hello v0.1.0 (D:\RustProjects\hello)
@@ -67,7 +69,7 @@ As a C# developer I'm so used to IntelliSense that I can't really imagine workin
 
 The extension simply named *Rust* ([rust-lang.rust](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust)) says to provide "lints, code completion and navigation, formatting and more" and is the most common Rust plugin with over half a million downloads.
 
-After installing the extension and opening the ```src/main.rs``` file, a notification appears requesting some additional components to be installed by the extension. Finally, we can build our hello program using the ```SHIFT + CTRL + B``` shortcut.
+After installing the extension and opening the ```src/main.rs``` file, a notification appears requesting some additional components to be installed by the extension. Finally, we can build our hello program using the usual ```SHIFT + CTRL + B``` shortcut.
 
 The *Rust* extension doesn't seem to do anything for ```Cargo.toml```. An extension called *crates* ([serayuzgur.crates](https://marketplace.visualstudio.com/items?itemName=serayuzgur.crates)) aims to help with dependencies from crates.io, but it seems a bit glitchy as of version 0.5.1. Instead I opted for a simple syntax highlighter *Better TOML* ([bungcip.better-toml](https://marketplace.visualstudio.com/items?itemName=bungcip.better-toml)).
 
